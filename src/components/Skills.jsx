@@ -29,9 +29,9 @@ export default function Skills() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1 }}
-            className="relative h-[440px] md:h-[520px] order-2 lg:order-1"
+            className="relative h-[440px] md:h-[520px] order-2 lg:order-1 overflow-hidden"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-accent-blue/10 to-accent-purple/10 blur-3xl" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[70%] h-[70%] rounded-full bg-gradient-to-br from-accent-blue/25 to-accent-purple/25 blur-3xl pointer-events-none" />
             <TagCloud words={techCloud} active={inView} />
           </motion.div>
 
